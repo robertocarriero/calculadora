@@ -7,12 +7,24 @@ class Calculadora {
         return( num1 + num2);
     }
     restar(num1, num2){
-        return( num1 - num2);
+        if (num1 !== num2){
+            return(num1-num2);
+        }
+        else if (num1==num2){
+            return("0") ;
+        }
     }
     multiplicar(num1, num2){
+        if(num1 !== 0 && num2 !==0)
         return( num1 * num2);
+        else if(num1 !== 0 && num2 == 0){
+            return("0");
+        }
     }
     dividir(num1 , num2){
         return( num1 / num2);
     }
+
+    
+    
 }

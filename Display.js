@@ -14,7 +14,7 @@ class Display {
         }
     }
 
-    // Creamos un metodo de nuestra clase para borrar en el display un valor uni por uno
+    // Creamos un metodo de nuestra clase para borrar en el display un valor uno por uno
     borrar() {
         this.valorActual = this.valorActual.toString().slice(0,-1);
         this.imprimirValores();
@@ -28,6 +28,8 @@ class Display {
         // Acualimazos el display con:
         this.imprimirValores();
     }
+
+    
 
     computar(tipo) {
         this.tipoOperacion !== 'igual' && this.calcular();
